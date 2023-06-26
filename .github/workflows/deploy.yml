@@ -40,7 +40,7 @@ jobs:
         uses: easingthemes/ssh-deploy@v2.1.5
         with:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY}}
-          SOURCE: “dist/three/”
-          REMOTE_HOST: “15.236.160.224”
-          REMOTE_USER: “ubuntu”
-          TARGET: “/var/www/html/three/dist/three”
+          SOURCE: "dist/three/"
+          REMOTE_HOST: "44.214.126.126"
+          REMOTE_USER: "ubuntu"
+          TARGET: "/var/www/html/three/dist/three"
