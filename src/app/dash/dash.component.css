@@ -1,0 +1,75 @@
+.rectangle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 30px; /* ajustez l'espace entre les rectangles */
+  }
+  
+  .rectangle {
+    width: 300px;
+    height: 150px;
+    border-radius: 15px;
+    transition: transform 0.3s ease; /* ajoutez cette ligne pour une transition fluide */
+    position: relative; /* ajoutez cette ligne pour positionner les icônes */
+  }
+  
+  .rectangle i {
+    position: absolute; /* ajoutez cette ligne pour positionner les icônes */
+    top: 52px; /* ajustez la position verticale de l'icône */
+    right: 25px; /* ajustez la position horizontale de l'icône */
+    font-size: 45px; /* ajustez la taille de l'icône */
+    color: #ffffff; /* ajustez la couleur de l'icône */
+  }
+  
+  .red-rectangle {
+    background: linear-gradient(135deg, orange 0%, red 100%);
+    box-shadow: 0 0 25px rgba(255, 69, 0, 0.5);
+  }
+  
+  .blue-rectangle {
+    background: linear-gradient(135deg, #00a0ff 0%, #0061ff 100%);
+    box-shadow: 0 0 25px rgba(0, 97, 255, 0.5);
+  }
+  
+  .green-rectangle {
+    background: linear-gradient(135deg, #52e700 0%, #00a500 100%);
+    box-shadow: 0 0 25px rgba(0, 165, 0, 0.5);
+  }
+  
+  .purple-rectangle {
+    background: linear-gradient(135deg, #c100e5 0%, #6900a1 100%);
+    box-shadow: 0 0 25px rgba(105, 0, 161, 0.5);
+  }
+  
+  .rectangle:hover {
+    transform: scale(1.05); /* ajoutez cette ligne pour agrandir le rectangle de 10% */
+  }
+  
+  .rectangle-text {
+    font-family: 'Poppins', sans-serif;
+    padding-left: 15px; /* ajoute un espace à gauche pour positionner le texte */
+    padding-top: 21%;
+    color: #fff;
+    font-weight: bold;
+    font-weight: 700;
+    letter-spacing: 0.9px;
+
+  }
+  
+  .rectangle-text h3 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    
+  }
+  
+  .rectangle-text p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.3em;
+  }
+  
+
+  

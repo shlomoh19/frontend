@@ -1,0 +1,38 @@
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+
+<div class="login-container">
+  <div class="white-space">
+    <div class="login-form-container">
+      <img src="assets/text.png" alt="Logo de la société" class="company-logo">
+
+      <h2>Se connecter à IZNES</h2>
+      <form (ngSubmit)="login()">
+        <label for="username">Nom d'utilisateur</label>
+        <input id="username" [(ngModel)]="username" name="username" type="text" placeholder="Nom d'utilisateur"> <!-- Ajout du ngModel -->
+
+        <label for="password">Mot de Passe</label>
+        <input id="password" [(ngModel)]="password" name="password" type="password" placeholder="Mot de Passe" style=" margin-bottom: 35px;"> <!-- Ajout du ngModel -->
+
+        <button style=" margin-bottom: 10px;" type="submit">S'IDENTIFIER</button> <!-- Retirer routerLink="/dash" -->
+      </form>
+      <a href="#">Mot de passe oublié?</a>
+      <p class="restricted-access">IZNES est un environnement privé soumis à un accès autorisé uniquement.</p>
+    </div>
+  </div>
+
+  <div class="overlay-content">
+    <img id="floating-logo" src="assets/mainLogo.png" alt="img" class="overlay-image">
+    <hr class="separator"> <!-- Ajoutez cette ligne -->
+
+    <h3 class="overlay-text typing-effect">The power of Blockchain for disrupting Fund Distribution
+
+    </h3>
+    <button class="cta-button">EN SAVOIR PLUS</button>
+
+  </div>
+
+  <canvas id="background"></canvas>
+  <div class="black-overlay"></div>
+</div>

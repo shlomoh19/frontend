@@ -1,0 +1,228 @@
+.login-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.white-space {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 35%;
+  height: 100%;
+  background-color: white;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form-container {
+  width: 80%;
+  text-align: center;
+  font-family: Metropolis,"Avenir Next","Helvetica Neue",Arial,sans-serif;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 24px;
+  color: #545454;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  text-align: left;
+  margin: 10px 0 0 0;
+  font-weight: bold;
+  color: #545454;
+  line-height: 20px;
+  position: static;
+  width: 100%;
+  font-size: 13px;
+}
+
+input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  background-color: #1a5eb8;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  font-size: 13px;
+}
+
+button:hover {
+  background-color: #0F468C;
+
+}
+
+a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0f468c;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.restricted-access {
+  margin-top: 40px;
+  font-size: 13px;
+  color: #666;
+  font-weight: 600;
+}
+
+canvas#background {
+  position: absolute;
+  left: 30%;
+  top: 0;
+  width: 70%;
+  height: 100%;
+}
+
+#background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.overlay-content {
+  position: absolute;
+  top: 40%;
+  left: calc(35% + 50% * (1 - 0.35));
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+}
+
+.overlay-text {
+  color: #ffffff;
+  font-size: 18px;
+  margin-top: 0px;
+  font-family: Metropolis,"Avenir Next","Helvetica Neue",Arial,sans-serif;
+  margin-bottom: 0px;
+}
+
+.logo{
+
+}
+
+.company-logo{
+  width: 280px;
+  height: auto;
+  margin-top: 7.5em;
+  margin-left: 7.5em;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+ 
+}
+.overlay-image {
+  display: block;
+  max-width: 550px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: -5rem; /* Ajustez cette valeur pour modifier l'espace entre l'image et la barre */
+  opacity: 0.95;
+  pointer-events: none; /* Ajoutez cette ligne pour rendre l'image non cliquable */
+  user-select: none; /* Ajoutez cette ligne pour empêcher la sélection de l'image */
+  
+  /* Ajoutez les lignes suivantes pour l'animation flottante */
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Définissez l'animation de flottement */
+@keyframes float {
+  0% { transform: translatey(0px); }
+  50% { transform: translatey(-10px); }
+  100% { transform: translatey(0px); }
+}
+
+.black-overlay {
+  position: absolute;
+  top: 0;
+  left: 35%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.192); /* Ajustez la valeur d'opacité (0.5 ici) entre 0 et 1 */
+  z-index: 1; /* Assurez-vous que cette div est au-dessus du canvas */
+}
+
+
+.typing-effect {
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: monospace; /* Vous pouvez utiliser la police de votre choix */
+  border-right: 0.20em solid rgb(255, 255, 255); /* Ajoutez une bordure à droite pour simuler un curseur */
+  animation: typing 4s steps(50, end) forwards, blink-caret 4s steps(50, end) forwards;
+  font-family: 'Montserrat', sans-serif; /* Remplacez 'monospace' par 'Poppins' */
+  font-weight: 700; /* Ajoutez une épaisseur de police pour un aspect plus audacieux */
+
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  0%, 100% {
+    border-right-color: transparent;
+  }
+  50% {
+    border-right-color: rgb(255, 255, 255);
+  }
+}
+
+.separator {
+  border: 0; /* Supprimez la bordure par défaut */
+  height: 1.5px; /* Définissez l'épaisseur de la barre horizontale */
+  background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255));
+
+  margin: 1.5rem auto; /* Remplacez '0' par 'auto' pour centrer le séparateur */
+  width: 50%; /* Ajoutez une largeur pour réduire la largeur du séparateur */
+  margin-bottom: 2rem;
+}
+
+
+.cta-button {
+  margin-top: 20px; /* Ajustez comme nécessaire */
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: s5px; /* Un grand rayon donnera des bords arrondis */
+  color: white;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: Metropolis,"Avenir Next","Helvetica Neue",Arial,sans-serif;
+  font-weight: 300; /* Une valeur inférieure pour une police moins "grasse" */
+}
+
+.cta-button:hover {
+  background: white;
+  color: black;
+}
